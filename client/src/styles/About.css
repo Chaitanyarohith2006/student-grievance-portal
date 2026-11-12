@@ -1,0 +1,98 @@
+/* About Page Styles */
+.about-page {
+  padding: 40px 24px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 1.8rem;
+  color: #0a2540;
+  margin-bottom: 8px;
+}
+
+.about-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.about-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: #e8f0fe;
+  color: #0a2540;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section h2 {
+  font-size: 1.2rem;
+  color: #0a2540;
+  margin-bottom: 8px;
+}
+
+.about-section p {
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.about-list {
+  padding-left: 20px;
+  margin: 8px 0;
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.guidelines-box {
+  background: #f8fafc;
+  border: 1px solid #e5e9ef;
+  border-radius: 10px;
+  padding: 24px 28px;
+}
+
+.guidelines-box h3 {
+  color: #0a2540;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.guidelines-box ul {
+  padding-left: 18px;
+  color: #444;
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+.guidelines-box li {
+  margin-bottom: 4px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+}

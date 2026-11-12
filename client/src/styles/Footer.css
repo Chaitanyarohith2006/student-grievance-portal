@@ -1,0 +1,92 @@
+/* ============================================
+   Footer Styles - Student Grievance Portal
+   ============================================ */
+
+.footer {
+  background: #0a2540;
+  color: #ffffff;
+  padding: 48px 0 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0 24px;
+}
+
+/* Brand Column */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.footer-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Footer Sections */
+.footer-section h4 {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+/* Contact Info */
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  margin-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================
+   Mobile Responsive (<= 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,253 @@
+/* ===== Admin Dashboard ===== */
+
+.admin-dashboard {
+  padding: 32px 24px 60px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.dashboard-title {
+  font-size: 1.6rem;
+  color: #0a2540;
+  margin-bottom: 24px;
+}
+
+/* --- Stats Grid --- */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #e5e9ef;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stat-icon {
+  color: #5a9bd4;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0a2540;
+}
+
+/* --- Filters Bar --- */
+
+.filters-bar {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  background: white;
+  border: 1px solid #e5e9ef;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filter-group label {
+  font-size: 0.78rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.filter-group select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.search-group {
+  flex: 1;
+  min-width: 180px;
+  position: relative;
+}
+
+.search-group .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.search-group .search-input {
+  width: 100%;
+  padding: 8px 8px 8px 32px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+}
+
+.refresh-btn {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  background: #0a2540;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.refresh-btn:hover {
+  background: #1e3b5f;
+}
+
+/* --- Grievance Table --- */
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #e5e9ef;
+  border-radius: 10px;
+}
+
+.grievance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.grievance-table th {
+  background: #f8fafc;
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #0a2540;
+  border-bottom: 2px solid #e5e9ef;
+  white-space: nowrap;
+}
+
+.grievance-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.grievance-table tr:hover {
+  background: #fafbfc;
+}
+
+.grievance-table .btn-outline {
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  border: 1px solid #0a2540;
+  color: #0a2540;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+}
+
+.grievance-table .btn-outline:hover {
+  background: #0a2540;
+  color: white;
+}
+
+/* --- Badges --- */
+
+.priority-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.priority-badge.high {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.priority-badge.medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.priority-badge.low {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.status-badge.submitted {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.status-badge.under-review {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.resolved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.rejected {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+/* --- Loading & Empty States --- */
+
+.loading-row,
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+
+/* --- Mobile Responsive --- */
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filters-bar {
+    flex-direction: column;
+  }
+}
