@@ -58,9 +58,12 @@ const seedAdmin = async () => {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, async () => {
-  console.log(`Server running on port ${PORT}`);
-  await seedAdmin();
-});
+// Listen only locally; Vercel runs the exported app as a serverless function
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
+
+// Runs on cold start; only creates an admin if none exists
+seedAdmin();
 
 module.exports = app;
